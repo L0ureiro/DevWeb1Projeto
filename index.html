@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wraeclast Nexus</title>
-    <link rel="icon" href="images/Commandment_of_Winter_skill_icon.ico" type="image/x-icon">
-
+    <title>Chess Web App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Chess Web App</h1>
     </header>
-    <h1>Wraeclast Nexus</h1>
-    <hr>
-
-    <section id="submit-build">
-        <h2>Submit a Build</h2>
-        
-        <label for="build-link">Build Link:</label>
-        <input type="url" id="build-link" name="build-link" placeholder="PoB probably" required>
-        <button type="submit">Submit</button>
-        
-    </section>
-
+    <main>
+        <section class="registration-form">
+            <h2>Register</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <!-- Footer content can go here -->
+        <p>&copy; 2023 Chess Web App</p>
     </footer>
 </body>
 </html>
