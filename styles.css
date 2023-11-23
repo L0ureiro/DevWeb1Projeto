@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -13,7 +15,7 @@ header {
     text-align: center;
 }
 
-main {
+.main-reg-form {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -63,4 +65,15 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #555;
+}
+
+.radio-label {
+    display: inline;
+    margin-right: 5px;
+    font-weight: bold; 
+}
+
+.radio-input {
+    display: inline;
+    margin-right: 10px;
 }
