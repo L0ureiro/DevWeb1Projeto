@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
 /* styles.css */
 body {
@@ -8,12 +9,14 @@ body {
     background-color: #f2f2f2;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.custom-text-color-navbar a {
+    color: rgb(41, 41, 41); 
 }
+
+.custom-text-color-navbar a:hover {
+    color: #969696; /* Change to your desired hover color */
+}
+
 
 .main-reg-form {
     max-width: 800px;
@@ -37,36 +40,6 @@ header {
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button[type="submit"] {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button[type="submit"]:hover {
-    background-color: #555;
-}
-
 .radio-label {
     display: inline;
     margin-right: 5px;
@@ -76,4 +49,41 @@ button[type="submit"]:hover {
 .radio-input {
     display: inline;
     margin-right: 10px;
+}
+ 
+.open-matches-card{
+    min-height: 200px;
+}
+
+.box-area {
+    width: 60%;
+}
+
+.right-box{
+    padding: 10px 15px;;
+}
+
+@media only screen and (max-width: 768px){
+    .box-area {
+        margin: 0 10px;
+    }
+
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .left-box .featured-image img {
+        object-fit: cover;
+        height: 100%;
+      }
+
+    .left-box .featured-image h5,
+    .left-box .featured-image p {
+      display: none;
+    }
+
+    .right-box{
+        padding: 10px;
+    }
 }
