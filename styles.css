@@ -87,3 +87,8 @@ body {
         padding: 10px;
     }
 }
+
+
+div.col-md-3.border.border-dark {
+    --bs-gutter-x: 0;
+}
