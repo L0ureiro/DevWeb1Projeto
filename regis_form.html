@@ -44,10 +44,10 @@
 
 
     <!-- Container for Login Form -->
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="container d-flex align-items-center min-vh-100">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <div class="row col-6 justify-content-center align-items-center">
+                <div class="row col-7 bg-secondary p-2 bg-opacity-50 rounded shadow">
                     <div class="col-12 mb-4">
                         <h3 class="text-center">Sign Up!</h3>
                     </div>
@@ -61,24 +61,38 @@
                         <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
                     </div>
                     <div class="col-12 mb-3">
-                        <label for="level" class="form-label">Level:</label>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="newbie" name="level[]" value="newbie">
-                            <label class="form-check-label" for="newbie">Newbie</label>
-                        </div>
-                        <!-- Add other checkboxes as needed -->
-                    </div>
-                    <div class="col-12 mb-2">
-                        <button class="btn btn-lg btn-success w-100 fs-6">Register</button>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <button class="btn btn-lg btn-outline-success w-100 fs-6"><i class="bi bi-google" style="font-size: 1rem;"></i> Google</button>
-                    </div>
+                      <label for="level" class="form-label">Level:</label>
+                      <div class="row">
+                          <div class="col-auto">
+                              <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="newbie" name="level" value="newbie">
+                                  <label class="form-check-label" for="newbie">Newbie</label>
+                              </div>
+                          </div>
+                          <div class="col-auto">
+                              <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="intermediate" name="level" value="intermediate">
+                                  <label class="form-check-label" for="intermediate">Intermediate</label>
+                              </div>
+                          </div>
+                          <div class="col-auto">
+                              <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="advanced" name="level" value="advanced">
+                                  <label class="form-check-label" for="advanced">Advanced</label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>                                    
+                  <div class="col-12 mb-2">
+                      <button class="btn btn-lg btn-success w-100 fs-6">Register</button>
+                  </div>
+                  <div class="col-12 mb-3">
+                      <button class="btn btn-lg btn-outline-success w-100 fs-6"><i class="bi bi-google" style="font-size: 1rem;"></i> Google</button>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
