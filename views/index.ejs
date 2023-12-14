@@ -14,42 +14,9 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <ul>
-    <% users.forEach((user)=> { %>
-      <li class="mb-2">
-        <%= user.name %> cujo email eh: <%= user.email %>
-      </li>
-    <% }); %>
-  </ul>
+  
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-sm bg-secondary bg-opacity-50">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <img src="img/Lobbie-removebg-preview.png" alt="Site Logo" style="width: 100px; height: 40px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto fs-5 custom-text-color-navbar">
-          <li class="nav-item">
-            <a class="nav-link" href="/jogo">Play</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Tools</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Learn</a>
-          </li>
-        </ul>
-        <% if (!isLogged) { %>
-          <%- include('components/reg_login_buttons'); %>
-        <% } %>
-      </div>
-    </div>
-  </nav>
-
+  <%- include('components/navbar', { loggedIn: false }) %>
 
   <!-- Main Content -->
   <div class="container mt-4 gx-0">
