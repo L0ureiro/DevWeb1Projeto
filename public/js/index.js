@@ -24,4 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
   
         matchList.appendChild(tableRow);
       }
-});
+})
+
+function confirmDelete() {
+  if (confirm('Are you sure you want to delete your account?')) {
+    document.getElementById('delete-profile-form').submit();
+  }
+}

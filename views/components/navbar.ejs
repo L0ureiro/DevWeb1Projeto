@@ -20,7 +20,8 @@
         </ul>
         <% if (user) { %>
             <div class="d-flex">
-              <a href="/login"><button class="btn btn-outline-info me-2">Dashboard</button></a>
+              <span class="me-2 my-auto text-black">Welcome, <%= user.name %></span>
+              <a href="/profile"><button class="btn btn-outline-info me-2">Dashboard</button></a>
               <a href="/logout"><button class="btn btn-info">Log out</button></a>
             </div>
           <% } else { %>
