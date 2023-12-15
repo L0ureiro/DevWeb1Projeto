@@ -1,4 +1,4 @@
-const { db, getUserByEmail, getUserById } = require('./db');
+const { db } = require('./db');
 
 const express = require('express')
 const session = require('express-session')
@@ -176,7 +176,7 @@ app.put('/edit-profile', async (req, res) => {
 
 app.delete('/delete-profile', (req, res) => {
     const userId = req.user.id; 
-    
+
     db.run('DELETE FROM users WHERE id = ?', [userId], (err) => {
       if (err) {
         console.error(err.message);
